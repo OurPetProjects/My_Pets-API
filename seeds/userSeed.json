@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "first_name": "Christina",
+      "last_name": "Cox",
+      "location": "California, USA",
+      "age": 25,
+      "username": "yellowpeacock117",
+      "email": "chris.cox@example.com",
+      "password": "addison56"
+    },
+    {
+      "first_name": "Gregor",
+      "last_name": "Martens",
+      "location": "Alabama, USA",
+      "age": 41,
+      "username": "crazysnake606",
+      "email": "gregor.martens@example.com",
+      "password": "paranoid"
+    },
+    {
+      "first_name": "Svenja",
+      "last_name": "Biermann",
+      "location": "New York, USA",
+      "age": 22,
+      "username": "blackzebra913",
+      "email": "svenja.biermann@example.com",
+      "password": "svenheartsny12"
+    },
+    {
+      "first_name": "Arttu",
+      "last_name": "Kumpula",
+      "location": "Florida, USA",
+      "age": 21,
+      "username": "lazybutterfly672",
+      "email": "arttu.kumpula@example.com",
+      "password": "daemons28"
+    },
+    {
+      "first_name": "Balder",
+      "last_name": "Larsen",
+      "location": "Texas, USA",
+      "age": 45,
+      "username": "orangebear697",
+      "email": "balder.larsen@example.com",
+      "password": "1a2b3c4d"
+    },
+    {
+      "first_name": "Wesley",
+      "last_name": "Simpson",
+      "location": "Montana, USA",
+      "age": 27,
+      "username": "ticklishgoose931",
+      "email": "wesley.simpson@example.com",
+      "password": "quebec58"
+    },
+    {
+      "first_name": "Joann",
+      "last_name": "King",
+      "location": "Vermont, USA",
+      "age": 31,
+      "username": "tinylion653",
+      "email": "joann.king@example.com",
+      "password": "golions286"
+    },
+    {
+      "first_name": "Mathilde",
+      "last_name": "Thomsen",
+      "location": "Arizona, USA",
+      "age": 35,
+      "username": "redlion381",
+      "email": "mathilde.thomsen@example.com",
+      "password": "7susi3"
+    },
+    {
+      "first_name": "Sophia",
+      "last_name": "Ross",
+      "location": "California, USA",
+      "age": 18,
+      "username": "silverkoala381",
+      "email": "sophia.ross@example.com",
+      "password": "heka6w2"
+    },
+    {
+      "first_name": "Darryl",
+      "last_name": "Reyes",
+      "location": "Georgia, USA",
+      "age": 34,
+      "username": "tinyzebra693",
+      "email": "darryl.reyes@example.com",
+      "password": "royalzebr4"
+    }
+  ]
+}
