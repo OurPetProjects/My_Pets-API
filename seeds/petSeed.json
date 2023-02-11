@@ -1,0 +1,109 @@
+{
+  "pets": [
+    {
+      "pet-name": "Goldie Lox",
+      "species": "Fish",
+      "age": "6",
+      "parent-username": "petlover2000",
+      "notes": "Needs monthly tank clean"
+    },
+    {
+      "pet-name": "Charles Cheese",
+      "species": "Mouse",
+      "age": "8",
+      "parent-username": "petlover2000",
+      "notes": "Loves stinky cheese"
+    },
+    {
+      "pet-name": "Wish Bone",
+      "species": "Dog",
+      "age": "2",
+      "parent-username": "petlover2000",
+      "notes": "Loves belly rubs"
+    },
+    {
+      "pet-name": "Taz",
+      "species": "Cat",
+      "age": "6",
+      "parent-username": "crazysnake606",
+      "notes": "Allergic to chicken"
+    },
+    {
+      "pet-name": "Freedom",
+      "species": "Bird",
+      "age": "4",
+      "parent-username": "blackzebra913",
+      "notes": "Will fly away if taken outside"
+    },
+    {
+      "pet-name": "Dodger",
+      "species": "Dog",
+      "age": "9",
+      "parent-username": "lazybutterfly672",
+      "notes": ""
+    },
+    {
+      "pet-name": "Ellie",
+      "species": "Cat",
+      "age": "16",
+      "parent-username": "orangebear697",
+      "notes": "Needs daily medicine"
+    },
+    {
+      "pet-name": "Stripes",
+      "species": "Fish",
+      "age": "1",
+      "parent-username": "ticklishgoose931",
+      "notes": "Needs monthly tank clean"
+    },
+    {
+      "pet-name": "Snail McGee",
+      "species": "Turtle",
+      "age": "15",
+      "parent-username": "tinylion653",
+      "notes": ""
+    },
+    {
+      "pet-name": "Stinky",
+      "species": "Snake",
+      "age": "11",
+      "parent-username": "redlion381",
+      "notes": "Escape artist!"
+    },
+    {
+      "pet-name": "Paddington",
+      "species": "Lizard",
+      "age": "3",
+      "parent-username": "silverkoala381",
+      "notes": "Needs monthly tank clean"
+    },
+    {
+      "pet-name": "Hammie",
+      "species": "Hamster",
+      "age": "4",
+      "parent-username": "tinyzebra693",
+      "notes": ""
+    },
+    {
+      "pet-name": "Guinness",
+      "species": "Guinea Pig",
+      "age": "1",
+      "parent-username": "tinyzebra693",
+      "notes": ""
+    },
+    {
+      "pet-name": "Finch",
+      "species": "Tortoise",
+      "age": "9",
+      "parent-username": "orangebear697",
+      "notes": "Likes to roam the house"
+    },
+    {
+      "pet-name": "Hops",
+      "species": "Rabbit",
+      "age": "5",
+      "parent-username": "blackzebra913",
+      "notes": "Timothy hay lover!"
+    }
+  ]
+}

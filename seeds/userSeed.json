@@ -1,17 +1,17 @@
 {
   "users": [
     {
-      "first_name": "Christina",
-      "last_name": "Cox",
+      "first-name": "Miracle",
+      "last-name": "App",
       "location": "California, USA",
       "age": 25,
-      "username": "yellowpeacock117",
+      "username": "petlover2000",
       "email": "chris.cox@example.com",
-      "password": "addison56"
+      "password": "petlover1"
     },
     {
-      "first_name": "Gregor",
-      "last_name": "Martens",
+      "first-name": "Gregor",
+      "last-name": "Martens",
       "location": "Alabama, USA",
       "age": 41,
       "username": "crazysnake606",
@@ -19,8 +19,8 @@
       "password": "paranoid"
     },
     {
-      "first_name": "Svenja",
-      "last_name": "Biermann",
+      "first-name": "Svenja",
+      "last-name": "Biermann",
       "location": "New York, USA",
       "age": 22,
       "username": "blackzebra913",
@@ -28,8 +28,8 @@
       "password": "svenheartsny12"
     },
     {
-      "first_name": "Arttu",
-      "last_name": "Kumpula",
+      "first-name": "Arttu",
+      "last-name": "Kumpula",
       "location": "Florida, USA",
       "age": 21,
       "username": "lazybutterfly672",
@@ -37,8 +37,8 @@
       "password": "daemons28"
     },
     {
-      "first_name": "Balder",
-      "last_name": "Larsen",
+      "first-name": "Balder",
+      "last-name": "Larsen",
       "location": "Texas, USA",
       "age": 45,
       "username": "orangebear697",
@@ -46,8 +46,8 @@
       "password": "1a2b3c4d"
     },
     {
-      "first_name": "Wesley",
-      "last_name": "Simpson",
+      "first-name": "Wesley",
+      "last-name": "Simpson",
       "location": "Montana, USA",
       "age": 27,
       "username": "ticklishgoose931",
@@ -55,8 +55,8 @@
       "password": "quebec58"
     },
     {
-      "first_name": "Joann",
-      "last_name": "King",
+      "first-name": "Joann",
+      "last-name": "King",
       "location": "Vermont, USA",
       "age": 31,
       "username": "tinylion653",
@@ -64,8 +64,8 @@
       "password": "golions286"
     },
     {
-      "first_name": "Mathilde",
-      "last_name": "Thomsen",
+      "first-name": "Mathilde",
+      "last-name": "Thomsen",
       "location": "Arizona, USA",
       "age": 35,
       "username": "redlion381",
@@ -73,8 +73,8 @@
       "password": "7susi3"
     },
     {
-      "first_name": "Sophia",
-      "last_name": "Ross",
+      "first-name": "Sophia",
+      "last-name": "Ross",
       "location": "California, USA",
       "age": 18,
       "username": "silverkoala381",
@@ -82,8 +82,8 @@
       "password": "heka6w2"
     },
     {
-      "first_name": "Darryl",
-      "last_name": "Reyes",
+      "first-name": "Darryl",
+      "last-name": "Reyes",
       "location": "Georgia, USA",
       "age": 34,
       "username": "tinyzebra693",
