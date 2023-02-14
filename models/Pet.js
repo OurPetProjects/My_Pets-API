@@ -4,22 +4,32 @@ const petSchema = new Schema ({
     petName: {
         type: String,
         required: true,
+        unique: false,
+        trim: true,
     },
     species: {
-        type: Number,
+        type: String,
         required: true,
+        unique: false,
+        trim: true,
     },
     age: {
         type: Number,
         required: true,
+        unique: false,
+        trim: true,
     },
     parentUsername: {
-        type: Number,
+        type: String,
         required: true,
+        unique: false,
+        trim: true,
     },
     notes: {
         type: String,
         required: false,
+        unique: false,
+        trim: true,
     }
 })
 
