@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const bcrypt = require("bcrypt");
 
 const userSchema = new Schema ({
     firstName: {
@@ -42,7 +43,13 @@ const userSchema = new Schema ({
         required: false,
         unique: false,
         minlength: 5,
-    }
+    },
+    pets: [
+        {
+          type: Schema.Types.ObjectId,
+          ref: "Pet",
+        },
+      ],
 })
 
 // Set up pre-save middleware to create password
@@ -59,6 +66,6 @@ userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
   };
 
-const Pet = model('User', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;

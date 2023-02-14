@@ -30,7 +30,13 @@ const petSchema = new Schema ({
         required: false,
         unique: false,
         trim: true,
-    }
+    },
+    tasks: [
+        {
+            type: String,
+            required: false,
+        }
+    ]
 })
 
 const Pet = model('Pet', petSchema);
