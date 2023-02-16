@@ -1,44 +1,42 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require("mongoose");
 
-const petSchema = new Schema ({
-    petName: {
-        type: String,
-        required: true,
-        unique: false,
-        trim: true,
+const petSchema = new mongoose.Schema({
+  petName: {
+    type: String,
+    required: true,
+    unique: false,
+    trim: true,
+  },
+  species: {
+    type: String,
+    required: true,
+    unique: false,
+    trim: true,
+  },
+  age: {
+    type: Number,
+    required: true,
+    unique: false,
+    trim: true,
+  },
+  parentUsername: {
+    type: String,
+    required: true,
+    unique: false,
+    trim: true,
+  },
+  notes: {
+    type: String,
+    required: false,
+    unique: false,
+    trim: true,
+  },
+  tasks: [
+    {
+      type: String,
+      required: false,
     },
-    species: {
-        type: String,
-        required: true,
-        unique: false,
-        trim: true,
-    },
-    age: {
-        type: Number,
-        required: true,
-        unique: false,
-        trim: true,
-    },
-    parentUsername: {
-        type: String,
-        required: true,
-        unique: false,
-        trim: true,
-    },
-    notes: {
-        type: String,
-        required: false,
-        unique: false,
-        trim: true,
-    },
-    tasks: [
-        {
-            type: String,
-            required: false,
-        }
-    ]
-})
+  ],
+});
 
-const Pet = model('Pet', petSchema);
-
-module.exports = Pet;
+module.exports = mongoose.model("Pet", petSchema);
