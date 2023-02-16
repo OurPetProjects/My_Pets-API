@@ -7,8 +7,7 @@
       "age": 25,
       "username": "petlover2000",
       "email": "chris.cox@example.com",
-      "password": "petlover1", 
-      "pets": ["Goldie Lox", "Charles Cheese", "Wish Bone"]
+      "password": "petlover1"
     },
     {
       "first-name": "Gregor",
@@ -17,9 +16,7 @@
       "age": 41,
       "username": "crazysnake606",
       "email": "gregor.martens@example.com",
-      "password": "paranoid",
-      "pets": "Taz"
-
+      "password": "paranoid"
     },
     {
       "first-name": "Svenja",
@@ -28,8 +25,7 @@
       "age": 22,
       "username": "blackzebra913",
       "email": "svenja.biermann@example.com",
-      "password": "svenheartsny12",
-      "pets": ["Freedom", "Hops"]
+      "password": "svenheartsny12"
     },
     {
       "first-name": "Arttu",
@@ -38,9 +34,7 @@
       "age": 21,
       "username": "lazybutterfly672",
       "email": "arttu.kumpula@example.com",
-      "password": "daemons28",
-      "pets": "Dodger"
-
+      "password": "daemons28"
     },
     {
       "first-name": "Balder",
@@ -49,8 +43,7 @@
       "age": 45,
       "username": "orangebear697",
       "email": "balder.larsen@example.com",
-      "password": "1a2b3c4d",
-      "pets": ["Ellie", "Finch"]
+      "password": "1a2b3c4d"
     },
     {
       "first-name": "Wesley",
@@ -59,8 +52,7 @@
       "age": 27,
       "username": "ticklishgoose931",
       "email": "wesley.simpson@example.com",
-      "password": "quebec58",
-      "pets": "Stripes"
+      "password": "quebec58"
     },
     {
       "first-name": "Joann",
@@ -69,8 +61,7 @@
       "age": 31,
       "username": "tinylion653",
       "email": "joann.king@example.com",
-      "password": "golions286",
-      "pets": "Snail McGee"
+      "password": "golions286"
     },
     {
       "first-name": "Mathilde",
@@ -79,8 +70,7 @@
       "age": 35,
       "username": "redlion381",
       "email": "mathilde.thomsen@example.com",
-      "password": "7susi3",
-      "pets": "Stinky"
+      "password": "7susi3"
     },
     {
       "first-name": "Sophia",
@@ -89,8 +79,7 @@
       "age": 18,
       "username": "silverkoala381",
       "email": "sophia.ross@example.com",
-      "password": "heka6w2",
-      "pets": "Paddington"
+      "password": "heka6w2"
     },
     {
       "first-name": "Darryl",
@@ -99,8 +88,7 @@
       "age": 34,
       "username": "tinyzebra693",
       "email": "darryl.reyes@example.com",
-      "password": "royalzebr4",
-      "pets": ["Hammie", "Guinnes"]
+      "password": "royalzebr4"
     }
   ]
 }
