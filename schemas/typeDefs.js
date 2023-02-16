@@ -9,9 +9,8 @@ type Pet {
     age: Int!
     parentUsername: String!
     notes: String
-    tasks:[Tasks]!
+    tasks:[Tasks]
 }
-
 type User {
     _id: ID
     firstName: String!
@@ -21,23 +20,19 @@ type User {
     username: String!
     email: String!
     password: String!
-    pets:[Pet]!
+    pets:[Pet]
 }
-
 type Tasks {
     _id: ID
     text: String
 }
-
 type Auth {
     token: ID!
     user: User
 }
-
 type Query {
     pets: [Pet]
 }
-
 `;
 
 module.exports = typeDefs;
