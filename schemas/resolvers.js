@@ -4,7 +4,9 @@ const resolvers = {
     Query: {
         pets: async () => {
             return Pet.find()
-        }
+        }, 
+
+        
     }
 }
 

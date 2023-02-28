@@ -16,7 +16,6 @@ type User {
     firstName: String!
     lastName: String!
     location: String!
-    age: Int!
     username: String!
     email: String!
     password: String!
@@ -32,6 +31,11 @@ type Auth {
 }
 type Query {
     pets: [Pet]
+}
+type Mutation {
+  addUser(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
+  login(username: String!, password: String!): Auth
+  removeUser(userId: ID!): User
 }
 `;
 
