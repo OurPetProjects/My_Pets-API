@@ -21,12 +21,6 @@ const userSchema = new mongoose.Schema({
     unique: false,
     trim: true,
   },
-  age: {
-    type: Number,
-    required: true,
-    unique: false,
-    trim: true,
-  },
   username: {
     type: String,
     required: true,
