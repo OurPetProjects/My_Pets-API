@@ -35,7 +35,7 @@ type Query {
 type Mutation {
   addUser(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
   login(username: String!, password: String!): Auth
-  removeUser(userId: ID!): User
+  addPets()
 }
 `;
 
