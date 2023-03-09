@@ -1,1 +1,67 @@
-// TODO: Tasks listed for each species
+[
+  {
+  "species": "Fish",
+  "tasks": [
+    "Feed", "Clean tank", "Treat water", "Replace filter", "Turn lights on", "Turn lights off", "Vet visit"
+  ]
+},
+{
+  "species": "Mouse",
+  "tasks": [
+    "Feed", "Clean habitat", "Refill water", "Vet visit"
+  ]
+},  {
+  "species": "Dog",
+  "tasks": [
+    "Feed", "Walk", "Refill water", "Clean water and food bowls", "Train", "Playtime", "Vet visit"
+  ]
+},
+{
+  "species": "Cat",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Playtime", "Clean litter box", "Vet visit"
+  ]
+},
+{
+  "species": "Turtle",
+  "tasks": [
+    "Feed", "Treat water", "Clean tank", "Turn lights on", "Turn lights off", "Vet visit"
+  ]
+},
+{
+  "species": "Snake",
+  "tasks": [
+    "Feed", "Refill water", "Clean water bowl", "Clean habitat", "Turn lights on", "Turn lights off", "Vet visit"
+  ]
+},
+{
+  "species": "Hamster",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Clean habitat", "Vet visit"
+  ]
+},
+{
+  "species": "Lizard",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Clean habitat", "Turn lights on", "Turn lights off", "Vet visit"
+  ]
+},
+{
+  "species": "Guinea Pig",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Clean habitat", "Vet visit"
+  ]
+},
+{
+  "species": "Tortoise",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Clean habitat", "Turn lights on", "Turn lights off", "Vet visit"
+  ]
+},
+{
+  "species": "Rabbit",
+  "tasks": [
+    "Feed", "Refill water", "Clean water and food bowls", "Clean habitat", "Vet visit"
+  ]
+}
+]
