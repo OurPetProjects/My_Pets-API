@@ -1,79 +1,79 @@
 [
     {
-      "first-name": "Miracle",
-      "last-name": "App",
+      "firstName": "Miracle",
+      "lastName": "App",
       "location": "California, USA",
       "username": "petlover2000",
       "email": "chris.cox@example.com",
       "password": "petlover1"
     },
     {
-      "first-name": "Gregor",
-      "last-name": "Martens",
+      "firstName": "Gregor",
+      "lastName": "Martens",
       "location": "Alabama, USA",
       "username": "crazysnake606",
       "email": "gregor.martens@example.com",
       "password": "paranoid"
     },
     {
-      "first-name": "Svenja",
-      "last-name": "Biermann",
+      "firstName": "Svenja",
+      "lastName": "Biermann",
       "location": "New York, USA",
       "username": "blackzebra913",
       "email": "svenja.biermann@example.com",
       "password": "svenheartsny12"
     },
     {
-      "first-name": "Arttu",
-      "last-name": "Kumpula",
+      "firstName": "Arttu",
+      "lastName": "Kumpula",
       "location": "Florida, USA",
       "username": "lazybutterfly672",
       "email": "arttu.kumpula@example.com",
       "password": "daemons28"
     },
     {
-      "first-name": "Balder",
-      "last-name": "Larsen",
+      "firstName": "Balder",
+      "lastName": "Larsen",
       "location": "Texas, USA",
       "username": "orangebear697",
       "email": "balder.larsen@example.com",
       "password": "1a2b3c4d"
     },
     {
-      "first-name": "Wesley",
-      "last-name": "Simpson",
+      "firstName": "Wesley",
+      "lastName": "Simpson",
       "location": "Montana, USA",
       "username": "ticklishgoose931",
       "email": "wesley.simpson@example.com",
       "password": "quebec58"
     },
     {
-      "first-name": "Joann",
-      "last-name": "King",
+      "firstName": "Joann",
+      "lastName": "King",
       "location": "Vermont, USA",
       "username": "tinylion653",
       "email": "joann.king@example.com",
       "password": "golions286"
     },
     {
-      "first-name": "Mathilde",
-      "last-name": "Thomsen",
+      "firstName": "Mathilde",
+      "lastName": "Thomsen",
       "location": "Arizona, USA",
       "username": "redlion381",
       "email": "mathilde.thomsen@example.com",
       "password": "7susi3"
     },
     {
-      "first-name": "Sophia",
-      "last-name": "Ross",
+      "firstName": "Sophia",
+      "lastName": "Ross",
       "location": "California, USA",
       "username": "silverkoala381",
       "email": "sophia.ross@example.com",
       "password": "heka6w2"
     },
     {
-      "first-name": "Darryl",
-      "last-name": "Reyes",
+      "firstName": "Darryl",
+      "lastName": "Reyes",
       "location": "Georgia, USA",
       "username": "tinyzebra693",
       "email": "darryl.reyes@example.com",
