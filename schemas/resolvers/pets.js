@@ -1,23 +1,20 @@
-const Pet = require ("../../models/Pet");
+const Pet = require("../../models/Pet");
 
-module.exports = {
-
+const Pets = {
   Query: {
-    pet: async (parent, {petId}) => {
+    pet: async (parent, { petId }) => {
       return Pet.findOne({ _id: petId });
     },
-
-
-  }, 
+  },
 
   Mutation: {
-    addPet: async (parent, {user}, context) => {
-      if(context.user) {
-        console.log('Adding pet to user profile')
+    addPet: async (parent, { user }, context) => {
+      if (context.user) {
+        console.log("Adding pet to user profile");
         return User.FindOneAndUpdate(
           { _id: context.user._id },
           {
-            petList: petList
+            petList: petList,
           },
           {
             new: true,
@@ -26,13 +23,14 @@ module.exports = {
         );
       }
     },
-    removePet: async (parent, {userId, petId}) => {
+    removePet: async (parent, { userId, petId }) => {
       return User.FindOneAndUpdate(
         { _id: userId },
-        { $pull: {petList: { _id: {$eq: petId} } } },
+        { $pull: { petList: { _id: { $eq: petId } } } },
         { new: true }
       );
     },
-  }
+  },
+};
 
-}
+module.exports = { Pets };
