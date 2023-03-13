@@ -30,12 +30,14 @@ type Auth {
     user: User
 }
 type Query {
-    pets: [Pet]
+    pet(petId: ID!): Pet
 }
 type Mutation {
   addUser(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
   login(username: String!, password: String!): Auth
-  addPets()
+  register(userId: ID!): Auth
+  addPet(user: ID!): Pet
+  removePet(userId: ID!, petId: ID!): User
 }
 `;
 
