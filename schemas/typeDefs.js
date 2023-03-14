@@ -15,7 +15,7 @@ type User {
     _id: ID
     firstName: String!
     lastName: String!
-    location: String!
+    location: String
     username: String!
     email: String!
     password: String!
@@ -33,9 +33,8 @@ type Query {
     pet(petId: ID!): Pet
 }
 type Mutation {
-  addUser(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
   login(username: String!, password: String!): Auth
-  register(userId: ID!): Auth
+  register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
   addPet(user: ID!): Pet
   removePet(userId: ID!, petId: ID!): User
 }
