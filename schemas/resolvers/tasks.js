@@ -4,7 +4,7 @@ const Task = require("../../models/Task");
 const Tasks = {
   Query: {
         // TODO: Call All Tasks
-        async getTasks() {
+        async getTasks(_, { petId }) {
           try {
             const tasks = await Task.find();
             return tasks;
