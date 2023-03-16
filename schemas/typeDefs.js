@@ -44,6 +44,7 @@ const typeDefs = gql`
       notes: String
     ): Pet!
     deletePet(petId: ID!): [Pet]
+    editPet(petId: ID!): [Pet]
   }
 `;
 

@@ -4,6 +4,7 @@ const Pet = require("../../models/Pet");
 
 const Pets = {
   Query: {
+    // ! Find All Pets
     async getPets() {
       try {
         const pets = await Pet.find();
@@ -12,7 +13,7 @@ const Pets = {
         throw new Error(error);
       }
     },
-
+// ! Find One Pet
     async findPet ( _, {petId }) {
       try {
         const pet = Pet.findOne({ _id: petId });
@@ -22,12 +23,10 @@ const Pets = {
         throw new Error(error);
       }
     }
-    // pet: async (parent, { petId }) => {
-    //   return Pet.findOne({ _id: petId });
-    // },
   },
 
   Mutation: {
+    // ! Create Pet
     async createPet(
       _, 
       { petName, species, age, parentUsername, notes }
@@ -38,7 +37,7 @@ const Pets = {
       const savedPet = await newPet.save();
       return savedPet;
     }, 
-
+// ! Delete Pet
     async deletePet(_, { petId }) {
 			const pet = await Pet.findById(petId);
 			if (!pet) {
@@ -57,33 +56,38 @@ const Pets = {
 				throw new UserInputError(error);
 			}
 		},
+    // ! Edit Pet
+    async editPet(_, { petName, species, age, parentUsername, notes }) 
+    {
+      const pet = await Pet.findOne(petId);
+      if (!pet) throw new Error("Pet not found.");
+
+      if (petName === "") throw new Error("Invalid field.");
+      if (species === "") throw new Error("Invalid field.");
+      if (age === null ) throw new Error("Invalid field.");
+      if (parentUsername === "") throw new Error("Invalid field.");
+      if (notes === "") throw new Error("Invalid field.");
+
+      const petEdits = {
+        petName,
+        species,
+        age, 
+        parentUsername,
+        notes
+      };
+
+      pet.push(petEdits);
+
+      try{
+        await pet.save();
+        const updatePet = await Pet.find();
+        return updatePet;
+      } catch (error) {
+        throw new Error("Cannot edit pet.");
+      }
+
+    }
 }
 };
-
-//   Mutation: {
-//     addPet: async (parent, { user }, context) => {
-//       if (context.user) {
-//         console.log("Adding pet to user profile");
-//         return User.FindOneAndUpdate(
-//           { _id: context.user._id },
-//           {
-//             petList: petList,
-//           },
-//           {
-//             new: true,
-//             runValidators: true,
-//           }
-//         );
-//       }
-//     },
-//     removePet: async (parent, { userId, petId }) => {
-//       return User.FindOneAndUpdate(
-//         { _id: userId },
-//         { $pull: { petList: { _id: { $eq: petId } } } },
-//         { new: true }
-//       );
-//     },
-//   },
-// };
 
 module.exports = { Pets };
