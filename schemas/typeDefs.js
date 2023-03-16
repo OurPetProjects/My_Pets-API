@@ -35,7 +35,6 @@ const typeDefs = gql`
   }
   type Mutation {
     register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
-    register: User!
     login(username: String!, password: String!): User!
     createPet(
       petName: String!
@@ -46,6 +45,7 @@ const typeDefs = gql`
     ): Pet!
     deletePet(petId: ID!): [Pet]
     editPet(petId: ID!): [Pet]
+    getTasks: [Tasks]
   }
 `;
 

@@ -14,7 +14,7 @@ const Pets = {
       }
     },
 // ! Find One Pet
-    async findPet ( _, {petId }) {
+    async findPet ( _, {petId}) {
       try {
         const pet = Pet.findOne({ _id: petId });
         if (pet) return pet;
