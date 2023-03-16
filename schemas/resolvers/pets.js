@@ -1,23 +1,35 @@
+const { create } = require("../../models/Pet");
 const Pet = require("../../models/Pet");
 
 const Pets = {
   Query: {
-    async getPets(){
-      try{
+    async getPets() {
+      try {
         const pets = await Pet.find();
         return pets;
       } catch (error) {
-        throw new Error(error)
+        throw new Error(error);
       }
-    }
-
+    },
 
     // pet: async (parent, { petId }) => {
     //   return Pet.findOne({ _id: petId });
     // },
-    
+  },
+
+  Mutation: {
+    async createPet(
+      _, 
+      { petName, species, age, parentUsername, notes }
+    ) {
+      const newPet = new Pet({
+        petName, species, age, parentUsername, notes
+      });
+      const savedPet = await newPet.save();
+      return savedPet;
     }
-  }
+  },
+};
 
 //   Mutation: {
 //     addPet: async (parent, { user }, context) => {

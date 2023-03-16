@@ -1,17 +1,17 @@
-const {gql} = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 //Need Query and Mutations - added basic auth as we will have an Auth object
 const typeDefs = gql`
-type Pet {
+  type Pet {
     _id: ID
     petName: String!
     species: String!
     age: Int!
     parentUsername: String!
     notes: String
-    tasks:[Tasks]
-}
-type User {
+    tasks: [Tasks]
+  }
+  type User {
     _id: ID
     firstName: String!
     lastName: String!
@@ -19,25 +19,32 @@ type User {
     username: String!
     email: String!
     password: String!
-    pets:[Pet]
-}
-type Tasks {
+    pets: [Pet]
+  }
+  type Tasks {
     _id: ID
     text: String
-}
-type Auth {
+  }
+  type Auth {
     token: ID!
     user: User
-}
-type Query {
-  getPets: [Pet]
-}
-type Mutation {
-  login(username: String!, password: String!): Auth
-  register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
-  addPet(user: ID!): Pet
-  removePet(userId: ID!, petId: ID!): User
-}
+  }
+  type Query {
+    getPets: [Pet]
+  }
+  type Mutation {
+    register: User!
+    login(username: String!, password: String!): User!
+    createPet(
+      petName: String!
+      species: String!
+      age: Int!
+      parentUsername: String!
+      notes: String
+    ): Pet!
+  }
 `;
 
 module.exports = typeDefs;
+
+// for working tree push
