@@ -34,6 +34,7 @@ const typeDefs = gql`
     findPet(petId: ID!): Pet
   }
   type Mutation {
+    register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
     register: User!
     login(username: String!, password: String!): User!
     createPet(
