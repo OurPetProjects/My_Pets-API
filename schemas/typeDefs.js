@@ -30,7 +30,7 @@ type Auth {
     user: User
 }
 type Query {
-    pet(petId: ID!): Pet
+  getPets: [Pet]
 }
 type Mutation {
   login(username: String!, password: String!): Auth
