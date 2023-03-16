@@ -1,3 +1,4 @@
+const { UserInputError } = require("apollo-server-express");
 const { create } = require("../../models/Pet");
 const Pet = require("../../models/Pet");
 
@@ -16,7 +17,7 @@ const Pets = {
       try {
         const pet = Pet.findOne({ _id: petId });
         if (pet) return pet;
-        else throw new Error("That pet does not exist.");
+        else throw new Error("Pet does not exist.");
       } catch (error) {
         throw new Error(error);
       }
@@ -36,8 +37,27 @@ const Pets = {
       });
       const savedPet = await newPet.save();
       return savedPet;
-    }
-  },
+    }, 
+
+    async deletePet(_, { petId }) {
+			const pet = await Pet.findById(petId);
+			if (!pet) {
+				throw new UserInputError("Pet does not exist.");
+			}
+			try {
+				if (pet) {
+					await pet.delete();
+					const removePet = await Pet.find();
+					return removePet;
+				} else
+					throw new AuthenticationError(
+						"You can not delete this pet."
+					);
+			} catch (error) {
+				throw new UserInputError(error);
+			}
+		},
+}
 };
 
 //   Mutation: {
