@@ -31,6 +31,7 @@ const typeDefs = gql`
   }
   type Query {
     getPets: [Pet]
+    findPet(petId: ID!): Pet
   }
   type Mutation {
     register: User!
@@ -46,5 +47,3 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
-
-// for working tree push

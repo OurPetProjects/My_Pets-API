@@ -12,6 +12,15 @@ const Pets = {
       }
     },
 
+    async findPet ( _, {petId }) {
+      try {
+        const pet = Pet.findOne({ _id: petId });
+        if (pet) return pet;
+        else throw new Error("That pet does not exist.");
+      } catch (error) {
+        throw new Error(error);
+      }
+    }
     // pet: async (parent, { petId }) => {
     //   return Pet.findOne({ _id: petId });
     // },
