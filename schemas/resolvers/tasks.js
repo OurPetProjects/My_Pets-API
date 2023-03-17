@@ -17,13 +17,13 @@ const Tasks = {
   Mutation: {
 
     // TODO: Add task to pet via pet id, which is under user id
-    // addTask: async (parent, { petId, taskId }) => {
-    //   return Pet.FindOneAndUpdate(
-    //     { _id: petId },
-    //     { $push: { taskList: { _id: { $eq: taskId } } } },
-    //     { new: true }
-    //   );
-    // },
+      addTask: async (parent, { petId, task }) => {
+        return Pet.FindOneAndUpdate(
+          { _id: petId },
+          { $addToSet: { tasks: task } },
+          { new: true }
+        );
+      },
 
     // TODO: Edit task
 
