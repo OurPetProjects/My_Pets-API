@@ -31,9 +31,12 @@ const typeDefs = gql`
   }
   type Query {
     getPets: [Pet]
+    findPet(petId: ID!): Pet
+    getTasks: [Tasks]
+
   }
   type Mutation {
-    register: User!
+    register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
     login(username: String!, password: String!): User!
     createPet(
       petName: String!
@@ -42,9 +45,9 @@ const typeDefs = gql`
       parentUsername: String!
       notes: String
     ): Pet!
+    deletePet(petId: ID!): [Pet]
+    editPet(petId: ID!): [Pet]
   }
 `;
 
 module.exports = typeDefs;
-
-// for working tree push
