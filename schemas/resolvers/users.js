@@ -15,6 +15,19 @@ function generateToken(user) {
 }
 
 const Users = {
+  Query: {
+    //Find all Users - testing query
+    async allUsers() {
+      try {
+        const users = await User.find();
+        return users;
+      } catch (error) {
+        throw new Error(error);
+      }
+    }
+
+  },
+
   Mutation: {
     async login(_, { username, password }) {
       const { errors, valid } = validateLoginInput(username, password);

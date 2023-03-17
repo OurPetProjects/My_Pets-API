@@ -34,7 +34,7 @@ const petSchema = new mongoose.Schema({
   tasks: [
     {
       type: String,
-      required: false,
+      trim: true,
     },
   ],
 });

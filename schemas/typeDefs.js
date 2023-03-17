@@ -30,10 +30,12 @@ const typeDefs = gql`
     user: User
   }
   type Query {
+    allUsers: [User]
+
     getPets: [Pet]
     findPet(petId: ID!): Pet
-    getTasks: [Tasks]
 
+    getTasks: [Tasks]
   }
   type Mutation {
     register(firstName: String!, lastName: String!, username: String!, email: String, password: String!): Auth
