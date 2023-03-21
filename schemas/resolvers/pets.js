@@ -57,9 +57,9 @@ const Pets = {
 			}
 		},
     // ! Edit Pet
-    async editPet(_, { petName, species, age, parentUsername, notes }) 
+    async editPet(_, { petId, petName, species, age, parentUsername, notes }) 
     {
-      const pet = await Pet.findOne(petId);
+      const pet = await Pet.findOneAndUpdate(petId);
       if (!pet) throw new Error("Pet not found.");
 
       if (petName === "") throw new Error("Invalid field.");
