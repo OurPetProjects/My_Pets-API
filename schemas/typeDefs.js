@@ -9,7 +9,7 @@ const typeDefs = gql`
     age: Int!
     parentUsername: String!
     notes: String
-    tasks: [Tasks]
+    tasks: [String]
   }
   type User {
     _id: ID
