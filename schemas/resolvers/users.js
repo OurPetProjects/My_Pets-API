@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const { UserInputError } = require("apollo-server-express");
 
 const User = require("../../models/User");
+const { SECRET_KEY } = require("../../secrets");
 const { validateRegisterInput } = require("../../utils/validators");
 const { validateLoginInput } = require("../../utils/validators");
 
@@ -11,7 +12,10 @@ function generateToken(user) {
     id: user.id,
     email: user.email,
     username: user.username,
-  });
+  },
+  SECRET_KEY,
+    { expiresIn: "1h" }
+  );
 }
 
 const Users = {
@@ -44,17 +48,24 @@ const Users = {
     },
     async register(
       _,
-      { registerInput: { firstName, lastName, username, email, password, confirmPassword } },
+      {
+          firstName,
+          lastName,
+          username,
+          email,
+          password,
+          // confirmPassword,
+      },
       context,
       info
     ) {
       const { valid, errors } = validateRegisterInput(
-		firstName,
-		lastName,
+        firstName,
+        lastName,
         username,
         email,
         password,
-        confirmPassword
+        // confirmPassword
       );
       if (!valid) {
         throw new UserInputError("Errors", { errors });
@@ -81,7 +92,7 @@ const Users = {
 
       const newUser = new User({
         firstName,
-		lastName,
+        lastName,
         username,
         email,
         password,

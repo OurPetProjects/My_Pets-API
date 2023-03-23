@@ -9,3 +9,12 @@
   "parentUsername": "Me",
   "notes": "I really like yogurt"
 }
+
+## register
+{
+  "firstName": "jimothy",
+  "lastName": "Smitdicus",
+  "username": "CoolDude7",
+  "email": "test@email.com",
+  "password": "p0ssword"
+}
