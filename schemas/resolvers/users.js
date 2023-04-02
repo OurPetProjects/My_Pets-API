@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { UserInputError } = require("apollo-server-express");
 
-const User = require("../../models/User");
+const {User, Pet} = require("../../models");
 const { SECRET_KEY } = require("../../secrets");
 const { validateRegisterInput } = require("../../utils/validators");
 const { validateLoginInput } = require("../../utils/validators");
@@ -30,6 +30,7 @@ const Users = {
       }
     },
     //Find one User and return Pets from pets array
+    //We may need to complete creating context to test adding Pets to a user
     async user(_, { username }) {
       try {
         const user = User.findOne({ username }).populate('pets');
