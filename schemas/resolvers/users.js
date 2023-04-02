@@ -10,6 +10,7 @@ const { validateLoginInput } = require("../../utils/validators");
 function generateToken(user) {
   return jwt.sign({
     id: user.id,
+    firstName: user.firstName,
     email: user.email,
     username: user.username,
   },
@@ -60,7 +61,7 @@ const Users = {
 
       const match = await bcrypt.compare(password, user.password);
       if (!match) {
-        errors.general = "Incorrect credentials " + user.password + " " + hashed;
+        errors.general = "Incorrect credentials";
         throw new UserInputError("Incorrect Credentials", { errors });
       }
       const token = generateToken(user);
