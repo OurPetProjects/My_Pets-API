@@ -56,9 +56,11 @@ const Users = {
         throw new UserInputError("User not found", { errors });
       }
 
+      const hashed = await bcrypt.hash(password, 10);
+
       const match = await bcrypt.compare(password, user.password);
       if (!match) {
-        errors.general = "Incorrect credentials";
+        errors.general = "Incorrect credentials " + user.password + " " + hashed;
         throw new UserInputError("Incorrect Credentials", { errors });
       }
       const token = generateToken(user);
@@ -111,7 +113,7 @@ const Users = {
         });
       }
 
-      password = await bcrypt.hash(password, 12);
+      // password = await bcrypt.hash(password, 12);
 
       const newUser = new User({
         firstName,
