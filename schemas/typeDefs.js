@@ -40,7 +40,7 @@ const typeDefs = gql`
   }
   type Mutation {
     register(firstName: String!, lastName: String!, username: String!, email: String!, password: String!): Auth
-    login(username: String!, password: String!): User!
+    login(username: String!, password: String!): Auth
     createPet(
       petName: String!
       species: String!
