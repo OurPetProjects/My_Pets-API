@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { UserInputError } = require("apollo-server-express");
 
-const User = require("../../models/User");
+const {User, Pet} = require("../../models");
 const { SECRET_KEY } = require("../../secrets");
 const { validateRegisterInput } = require("../../utils/validators");
 const { validateLoginInput } = require("../../utils/validators");
@@ -19,6 +19,29 @@ function generateToken(user) {
 }
 
 const Users = {
+  Query: {
+    // Find all Users
+    async getUsers() {
+      try {
+        const users = await User.find();
+        return users;
+      } catch (error) {
+        throw new Error(error);
+      }
+    },
+    //Find one User and return Pets from pets array
+    //We may need to complete creating context to test adding Pets to a user
+    async user(_, { username }) {
+      try {
+        const user = User.findOne({ username }).populate('pets');
+        if (user) return user;
+      } catch (error) {
+        throw new Error(error);
+      }
+    },
+
+  },
+
   Mutation: {
     async login(_, { username, password }) {
       const { errors, valid } = validateLoginInput(username, password);

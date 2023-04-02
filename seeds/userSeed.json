@@ -5,7 +5,8 @@
       "location": "California, USA",
       "username": "petlover2000",
       "email": "chris.cox@example.com",
-      "password": "petlover1"
+      "password": "petlover1",
+      "pets": ["641ba8b90f1e32c554143372"]
     },
     {
       "firstName": "Gregor",
