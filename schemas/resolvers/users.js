@@ -77,6 +77,7 @@ const Users = {
       {
           firstName,
           lastName,
+          location,
           username,
           email,
           password,
@@ -86,8 +87,9 @@ const Users = {
       info
     ) {
       const { valid, errors } = validateRegisterInput(
-        firstName,
-        lastName,
+        // firstName,
+        // lastName,
+        // location,
         username,
         email,
         password,
@@ -119,6 +121,7 @@ const Users = {
       const newUser = new User({
         firstName,
         lastName,
+        location,
         username,
         email,
         password,

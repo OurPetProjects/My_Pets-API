@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
+var validateEmail = function(email) {
+  var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return re.test(email)
+};
+
 const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
@@ -30,13 +35,14 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    match: [/.+@.+\..+/, "Must match an email address!"],
+    validate: [validateEmail, 'Please fill a valid email address']
+    // match: [/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, "Must match an email address!"],
   },
   password: {
     type: String,
     required: true,
     unique: false,
-    minlength: 5,
+    minlength: 4,
   },
   pets: [
     {
