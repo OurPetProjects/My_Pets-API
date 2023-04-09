@@ -87,9 +87,6 @@ const Users = {
       info
     ) {
       const { valid, errors } = validateRegisterInput(
-        // firstName,
-        // lastName,
-        // location,
         username,
         email,
         password,
