@@ -1,3 +1,4 @@
+// Sign up
 module.exports.validateRegisterInput = (
     username,
     email,
@@ -11,14 +12,14 @@ module.exports.validateRegisterInput = (
     if (email.trim() === "") {
         errors.email = "Invalid - No email added";
     }
-    // else {
-    //     const regEx =
-    //         /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
-    //         // /.+@.+\..+/;
-    //     if (!email.match(regEx)) {
-    //         errors.email = "Invalid - bad email address";
-    //     }
-    // }
+    else {
+        const regEx =
+            /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/;
+            // /.+@.+\..+/;
+        if (!email.match(regEx)) {
+            errors.email = "Invalid - bad email address";
+        }
+    }
     if (password === "") {
         errors.password = "Invalid - Please type a password";
     // } else if (password !== confirmPassword) {
@@ -32,6 +33,7 @@ module.exports.validateRegisterInput = (
     };
 };
 
+// Login
 module.exports.validateLoginInput = (
     username,
     password
